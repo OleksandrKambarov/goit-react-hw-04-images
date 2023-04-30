@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import 'modern-normalize/modern-normalize.css';
+import ReactDOM from 'react-dom/client';
+
 import 'index.css';
 import App from 'components/App';
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </React.StrictMode>
 );
