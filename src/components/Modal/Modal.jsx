@@ -23,7 +23,7 @@ export const Modal = ({ url, alt = 'Large image', onClose }) => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [onClose]);
 
   return createPortal(
     <div className={s.overlay} onClick={handleBackdropClick}>
