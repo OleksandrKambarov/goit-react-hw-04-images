@@ -31,7 +31,7 @@ export const Modal = ({ url, alt = 'Large image', onClose }) => {
         <img src={url} alt={alt} />
       </div>
     </div>,
-    modalRoot,
+    modalRoot
   );
 };
 
